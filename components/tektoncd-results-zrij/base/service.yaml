@@ -9,10 +9,10 @@ metadata:
     app.kubernetes.io/name: tektoncd-results-zrij
     app.kubernetes.io/part-of: tekton-results
   name: tektoncd-results-zrij
-  namespace: rh-ee-mmhedhbi-tenant
 spec:
   ports:
-  - port: 8081
+  - name: "8081"
+    port: 8081
     targetPort: 8081
   selector:
     app.kubernetes.io/instance: tektoncd-results-zrij

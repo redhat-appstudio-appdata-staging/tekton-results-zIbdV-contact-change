@@ -9,9 +9,9 @@ metadata:
     app.kubernetes.io/name: tektoncd-results-zrij
     app.kubernetes.io/part-of: tekton-results
   name: tektoncd-results-zrij
-  namespace: rh-ee-mmhedhbi-tenant
 spec:
-  replicas: 1
+  replicas: 0
+  revisionHistoryLimit: 0
   selector:
     matchLabels:
       app: go-app
